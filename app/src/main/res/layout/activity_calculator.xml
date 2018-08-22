@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="形状:Q"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:popupBackground="#f5f5f5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="曲线高度:P"
+            android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinner_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:popupBackground="#f5f5f5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="拉出值:N"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/value_n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="请输入"
+            android:popupBackground="#f5f5f5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="净空高度:O"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/value_o"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入"
+            android:inputType="number"
+            android:popupBackground="#f5f5f5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_blue_round"
+        android:gravity="center"
+        android:text="计算"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_blue_round"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:text="1.Q、P、O为必填项,N为选填项\n2.输入值要大于0,小于等于0等同于不输入"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
