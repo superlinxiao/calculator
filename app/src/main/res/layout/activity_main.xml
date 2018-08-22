@@ -11,23 +11,40 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_blue_round"
+            android:gravity="center"
             android:onClick="clickFirst"
-            android:text="菜单一" />
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="菜单一"
+            android:textSize="16sp" />
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_blue_round"
+            android:gravity="center"
             android:onClick="clickSecond"
-            android:text="菜单二" />
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="菜单二"
+            android:textSize="16sp" />
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_blue_round"
+            android:gravity="center"
             android:onClick="clickThree"
-            android:text="菜单三" />
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="菜单三"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
